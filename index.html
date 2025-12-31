@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushil Bhatta | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Sushil<span>Bhatta</span></div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="btn-contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="hero" class="hero">
+    <div class="hero-content fade-in">
+        <img src="imgg.jpeg" alt="Profile" class="profile-img">
+        <h1>Hello, I'm <span class="highlight">Sushil Bhatta</span></h1>
+        <p class="hero-text">Computer Engineering Student specializing in <strong>Web Development</strong> & <strong>AI / ML</strong>.</p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="resume.pdf" download class="btn secondary">Download CV</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2 class="section-title">Who Am I?</h2>
+    <p class="about-text fade-in">
+        I am a passionate computer engineering student from IOE, Thapathali Campus,
+        interested in solving real-world problems using technology. I love building applications,
+        working with data & algorithms, and continuously learning new tools and technologies.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="skills-grid">
+        <div class="skill-card fade-in">
+            <h3>Web Development</h3>
+            <p>HTML5, CSS3, JavaScript, React, Django</p>
+        </div>
+        <div class="skill-card fade-in">
+            <h3>AI & Machine Learning</h3>
+            <p>Python, PyTorch, NumPy, Scikit-Learn</p>
+        </div>
+        <div class="skill-card fade-in">
+            <h3>Software Engineering</h3>
+            <p>C++, Data Structures & Algorithms, SQL</p>
+        </div>
+    </div>
+</section>
+<section id="projects" class="section">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="project-grid">
+
+        <div class="project-item fade-in" onclick="window.open('https://github.com/Sushil-Bhatta-sb/WEATHER_APP', '_blank')">
+            <div class="project-info">
+                <span>Web Development</span>
+                <h3>Weather App</h3>
+                <p>A responsive weather application providing real-time weather data using external APIs.</p>
+            </div>
+        </div>
+
+        <div class="project-item fade-in" onclick="window.open('https://github.com/Sushil-Bhatta-sb/SIMPLE-CITY-MAP', '_blank')">
+            <div class="project-info">
+                <span>DSA / C++</span>
+                <h3>Simple City Map</h3>
+                <p>A C++ graph-based Kathmandu city map using Dijkstra’s algorithm to determine shortest paths between locations.</p>
+            </div>
+        </div>
+
+        <div class="project-item fade-in" onclick="window.open('https://github.com/abhishekpanthee/graphics-project-', '_blank')">
+            <div class="project-info">
+                <span>Game Development</span>
+                <h3>Motion Racer</h3>
+                <p>A motion-controlled racing game where real-time sensor input lets players steer vehicles while racing through dynamic tracks.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Get In Touch</h2>
+    <p>Looking for internship or collaboration? Let's connect!</p>
+    <a href="mailto:bhattsushil567@gmail.com" class="email-link">📧 bhattsushil567@gmail.com</a>
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/sushil-bhatt-67855b318/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Sushil-Bhatta-sb" target="_blank">GitHub</a>
+    </div>
+    <p class="footer-note">© 2025 Sushil Bhatta • All Rights Reserved</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("show-menu");
+    }
+</script>
+
+</body>
+</html>
